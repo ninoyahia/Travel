@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+:root {
+    --main-color:#fff;
+}
+
+
+
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+
+}
+
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(59, 59, 59, 0.4), rgba(59, 59, 59, 0.4)), url("../images/pexels-pok-rie-3819190.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--main-color);
+    position: relative;
+}
+
+nav {
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 0;
+}
+
+nav .logo {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+    text-transform: capitalize;
+    margin: 0 20px;
+}
+
+nav i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    nav ul {
+        display: none;
+    }
+    
+    nav i {
+        display: block;
+    }
+}
+
+header .content {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+header .content p {
+    text-transform: capitalize;
+}
+
+header .content h2 {
+    font-size: 70px;
+    text-transform: capitalize;
+    max-width: 600px;
+    margin: 10px 0;
+}
+
+@media (max-width:768px){
+    header .content h2 {
+        font-size: 50px;
+    }
+}
+
+
+header .content button {
+    background-color: #034b4b;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    margin: 10px 0;
+    color: var(--main-color);
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
